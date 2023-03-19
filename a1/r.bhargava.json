@@ -1,7 +1,6 @@
 {
-    "firstName" : "Rishabh",
-    "lastName" : "Bhargava",
-    "birthDate" : "16/11/2001",
-    "emailAddress": "rishabh.bhargava.16@outlook.com"
-  }
-  // hello
+  "firstName": "Rishabh",
+  "lastName": "Bhargava",
+  "birthDate": "16/11/2001",
+  "emailAddress": "rishabh.bhargava.16@outlook.com"
+}
