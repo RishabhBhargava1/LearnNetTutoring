@@ -22,7 +22,7 @@
 
     <!-- style tags -->
     <style>
-      p {
+      main {
         font-family: "Roboto";
         background-color: #e05454;
       }
@@ -59,30 +59,41 @@
     </header>
 
     <main>
+    </br>
       <p>
-        Welcome to LearnNetTutoring!<br /><br />Apply to become a Learn Net tutor below.<br />
-        <br /><br />
-        Name: <input>
-        <br /><br />
-        Age: <input>
-        <br /><br />
-        Current Job/Degree: <input>
-        <br /><br />
-        Relevant Experience: <input>
-        <br /><br />
-        Subjects: <input>
-        <br /><br />
-        Email Address: <input>
-        <br /><br />
-        Other Relevant Information: <input>
+        Welcome to LearnNetTutoring!<br /><br />Apply to become a Learn Net
+        tutor below.<br />
+        <form>
+          <label for="email">Enter your email:</label>
+          <input type="email" name="email" required/>
+          <br /><br />
+          <label for="name">Enter your name:</label>
+          <input type="text" name="name" required/>
+          <br /><br />
+          <label for="subjects">Enter your subjects:</label>
+          <input type="text" name="subjects" required/>
+          <br /><br />
+          <label for="experience">Enter your experience:</label>
+          <input type="text" name="experience" />
+          <br /><br />
+          <label for="degree">Enter your degree/job:</label>
+          <input type="text" name="degree" />
+          <br /><br />
+          <label for="information">Enter other information:</label>
+          <input type="text" name="information" />
+          <br /><br />
+          <button type="submit">Submit</button>
+          <br /><br />
+        </form>
         <br />
-        <br /><button style="background-color: #ffffff">Become a tutor!</button
-          ><br /><br />
       </p>
     </main>
 
     <footer>
-      <h4>(c) 2023 LearnNet Ltd.<div>learnnettutoring@gmail.com</div></h4>
+      <h4>
+        (c) 2023 LearnNet Ltd.
+        <div>learnnettutoring@gmail.com</div>
+      </h4>
     </footer>
   </body>
 </html>
