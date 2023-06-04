@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" ; />
+    <title>Website with Login & Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">LearnNetTutoring</a>
+
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Product</a>
+            <a href="#" class="nav_link">Services</a>
+            <a href="#" class="nav_link">Contact</a>
+          </li>
+        </ul>
+
+        <button class="button" id="form-open">Login/Signup</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button style="background-color: rgb(255, 99, 99)" class="button">
+              Login Now
+            </button>
+
+            <div class="login_signup">
+              Don't have an account? <a href="#" id="signup">Signup</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+            <div class="buttons">
+              <button
+                class="btn-hover color-7"
+                id="learnerSignup"
+                onclick="selectLearner()"
+              >
+                Learner
+              </button>
+              <button
+                class="btn-hover color-7"
+                id="tutorSignup"
+                onclick="selectTutor()"
+              >
+                Tutor
+              </button>
+            </div>
+
+            <div id="learner">
+              <div class="form learner_form">
+                <form action="#">
+                  <div class="input_box">
+                    <i class="uil uil-user-circle"></i>
+                    <input type="text" placeholder="First Name" required />
+                  </div>
+                  <div class="input_box">
+                    <i class="uil uil-user-circle"></i>
+                    <input type="text" placeholder="Last Name" required />
+                  </div>
+                  <div class="input_box">
+                    <i class="uil uil-calender"></i>
+                    <input
+                      type="number"
+                      min="1"
+                      max="12"
+                      placeholder="Year Level"
+                      required
+                    />
+                  </div>
+                  <div class="input_box">
+                    <i class="uil uil-notebooks"></i>
+                    <link
+                      rel="stylesheet"
+                      href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css"
+                    />
+                    <select name="subjects" id="subjects" multiple>
+                      <option value="1">Accounting</option>
+                      <option value="2">Ancient History</option>
+                      <option value="3">Arabic</option>
+                      <option value="4">Art</option>
+                      <option value="5">Australian History</option>
+                      <option value="6">Biology</option>
+                      <option value="7">Business Management</option>
+                      <option value="8">Chemistry</option>
+                      <option value="9">Chinese</option>
+                      <option value="10">Economics</option>
+                      <option value="11">English</option>
+                      <option value="12">Environmental Science</option>
+                      <option value="13">French</option>
+                      <option value="14">Further Maths</option>
+                      <option value="15">Geography</option>
+                      <option value="16">German</option>
+                      <option value="17">Global Politics</option>
+                      <option value="18">Hindi</option>
+                      <option value="19">History</option>
+                      <option value="20">Italian</option>
+                      <option value="21">Japanese</option>
+                      <option value="22">Latin</option>
+                      <option value="23">Legal Studies</option>
+                      <option value="24">Literature</option>
+                      <option value="25">Maths</option>
+                      <option value="26">Maths Methods</option>
+                      <option value="27">Music</option>
+                      <option value="28">Philosophy</option>
+                      <option value="29">Physical Education</option>
+                      <option value="30">Physics</option>
+                      <option value="31">Psychology</option>
+                      <option value="32">Science</option>
+                      <option value="33">Specialist Maths</option>
+                      <option value="34">UCAT</option>
+                    </select>
+                  </div>
+                  <div class="input_box">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                    <i class="uil uil-envelope-alt email"></i>
+                  </div>
+                  <div class="input_box">
+                    <input
+                      type="password"
+                      placeholder="Create password"
+                      required
+                    />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div id="tutor" style="display: none">
+              <div class="form tutor_form">
+                <form action="#">
+                  <div class="input_box">
+                    <i class="uil uil-user-circle"></i>
+                    <input type="text" placeholder="First Name" required />
+                  </div>
+                  <div class="input_box">
+                    <i class="uil uil-user-circle"></i>
+                    <input type="text" placeholder="Last Name" required />
+                  </div>
+                  <div class="input_box">
+                    <i class="uil uil-notebooks"></i>
+                    <input type="text" placeholder="Subjects" required />
+                  </div>
+                  <div class="input_box">
+                    <i class="uil uil-dollar-sign"></i>
+                    <input
+                      type="number"
+                      min="1"
+                      max="1000"
+                      placeholder="Hourly Rate"
+                      required
+                    />
+                  </div>
+                  <div class="input_box">
+                    <i class="uil uil-notes"></i>
+
+                    <input
+                      type="text"
+                      placeholder="Which year levels do you tutor?"
+                      required
+                    />
+                  </div>
+                  <div class="input_box">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                    <i class="uil uil-envelope-alt email"></i>
+                  </div>
+                  <div class="input_box">
+                    <input
+                      type="password"
+                      placeholder="Create password"
+                      required
+                    />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="login_signup">
+              Already have an account? <a href="#" id="login">Login</a>
+            </div>
+            <button
+              style="background-color: rgb(255, 99, 99)"
+              class="button"
+              id="signUpUser"
+              onclick="validateForm()"
+            >
+              Signup Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+    <script>
+      new MultiSelectTag("subjects"); // id
+    </script>
+  </body>
+</html>
